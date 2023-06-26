@@ -3,7 +3,8 @@
   --main-color2: #233142;
   --main-color3: #455d7a;
   --color4: #5c0b05;
-  --hue: #e045c6;
+  --color5: #7e231d;
+  --color6: #7e423e;
 }
 
 .header {
@@ -28,6 +29,9 @@
   font-size: 18px;
   font-weight: 500;
 }
+.nav-link:hover {
+  color: var(--color4);
+}
 
 body {
   background-color: var(--color1);
@@ -40,6 +44,7 @@ body {
   color: white;
   background-color: var(--color4);
 }
+
 .card-text1 {
   padding-top: 50px;
   font-weight: 600;
@@ -48,6 +53,11 @@ body {
   margin-top: 40px;
   font-size: 20px;
   font-weight: 500;
+  text-align: justify;
+  margin-right: 20px;
+}
+.card_image {
+  height: 100%;
 }
 .button {
   display: inline-block;
@@ -62,4 +72,35 @@ body {
 }
 .button:hover {
   transform: translateY(-4px);
+}
+
+i {
+  font-size: 14px;
+}
+.about_heading {
+  color: var(--color5);
+  font-weight: 600px;
+}
+.about_heading span {
+  color: var(--color6);
+  font-weight: 600px;
+}
+.about-card {
+  border: none;
+  background: transparent;
+  font-weight: 500px;
+}
+.about-body {
+  position: relative;
+  top: -50px;
+  margin: 25px 45px;
+  text-align: justify;
+}
+.products_heading {
+  color: var(--color6);
+  font-weight: 600px;
+}
+.products_heading span {
+  color: var(--color5);
+  font-weight: 600px;
 }
