@@ -104,3 +104,148 @@ i {
   color: var(--color5);
   font-weight: 600px;
 }
+.prod_container {
+  display: grid;
+  align-content: center;
+}
+.products-card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: var(--main-color2);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.products-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color4);
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.products-card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.products-card:after {
+  content: "Cheerhouse";
+  position: absolute;
+  top: 40%;
+  left: -3%;
+  font-size: 60px;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(240, 125, 125, 0.05);
+}
+
+.products-card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.products-card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.products-card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.products-card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.products-card:hover .contentBx {
+  height: 210px;
+}
+
+.products-card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+.products-card .contentBx .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 5;
+  padding-bottom: 0;
+}
+
+.products-card:hover .contentBx .price {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.products-card .contentBx .price h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+.products-card.contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.products-card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+.prod-link {
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  top: -17px;
+  color: var(--color1);
+}
+
+.prod-link:hover {
+  text-decoration: underline;
+}
