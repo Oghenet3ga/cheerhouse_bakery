@@ -255,6 +255,9 @@ i {
   .products-card .contentBx .price h3 {
     display: none;
   }
+  .prod-link {
+    top: 17px;
+  }
 }
 ::-webkit-scrollbar {
   width: 12px;
