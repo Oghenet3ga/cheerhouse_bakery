@@ -245,11 +245,17 @@ i {
   top: -17px;
   color: var(--color1);
 }
-
 .prod-link:hover {
   text-decoration: underline;
 }
-
+@media screen and (max-width: 576px) {
+  .card_image {
+    display: none;
+  }
+  .products-card .contentBx .price h3 {
+    display: none;
+  }
+}
 ::-webkit-scrollbar {
   width: 12px;
   border-radius: 6px;
