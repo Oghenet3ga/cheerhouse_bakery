@@ -259,6 +259,7 @@ i {
     top: 17px;
   }
 }
+
 ::-webkit-scrollbar {
   width: 12px;
   border-radius: 6px;
