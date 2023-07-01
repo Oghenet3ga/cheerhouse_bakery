@@ -52,3 +52,5 @@ function changeContact(event) {
 }
 let convertContact = document.querySelector("#contact");
 convertContact.addEventListener("click", changeContact);
+
+//rotate(-25deg)
