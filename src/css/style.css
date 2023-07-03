@@ -171,9 +171,11 @@ i {
 .adj {
   top: 40% !important;
 }
+.adja {
+  top: 20% !important;
+}
 .adjb {
-  top: 40% !important;
-  width: 200px !important;
+  top: 30% !important;
 }
 .products-card .contentBx {
   position: absolute;
