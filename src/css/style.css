@@ -257,6 +257,9 @@ i {
 .prod-link:hover {
   text-decoration: underline;
 }
+.im {
+  margin: auto;
+}
 @media screen and (max-width: 576px) {
   .card_image {
     display: none;
