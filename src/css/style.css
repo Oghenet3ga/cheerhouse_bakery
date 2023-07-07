@@ -265,7 +265,7 @@ ul {
   margin-block: 2rem;
   margin-inline: auto;
   overflow: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: mandatory x;
 }
 .gimage {
   width: 420px;
@@ -275,11 +275,11 @@ li {
   place-items: center;
   color: white;
   font-size: 3rem;
-
   aspect-ratio: 2/1.5;
   width: 100%;
   flex-shrink: 0;
   scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 #contact {
   background-color: var(--main-color2);
@@ -297,6 +297,7 @@ li {
 }
 .footer_copy {
   text-align: center;
+  font-size: 16px;
 }
 ::-webkit-scrollbar {
   width: 14px;
@@ -326,5 +327,8 @@ li {
   .google-map {
     width: 300px;
     height: 250px;
+  }
+  .footer_copy {
+    font-size: 14px;
   }
 }
