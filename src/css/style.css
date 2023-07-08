@@ -331,4 +331,7 @@ li {
   .call {
     font-size: 15px;
   }
+  .footer_copy {
+    font-size: 14px;
+  }
 }
